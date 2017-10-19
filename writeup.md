@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Here is a link to my [project code]( https://github.com/YuchaoYin/Project2TrafficSignClassifier/Traffic_Sign_Classifier.ipynb )
+###Here is a link to my [project code](https://github.com/YuchaoYin/Project2TrafficSignClassifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
