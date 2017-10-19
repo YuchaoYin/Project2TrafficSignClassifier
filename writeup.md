@@ -153,12 +153,13 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
-Top 5 model predictions for image 0 (Target is 14)
-   Prediction = 14 with confidence 1.00
-   Prediction = 17 with confidence 0.00
-   Prediction = 12 with confidence 0.00
-   Prediction = 15 with confidence 0.00
-   Prediction = 33 with confidence 0.00
+|Top 5 model predictions for image 0 (Target is 14)|
+|:---------------------:|
+|   Prediction = 14 with confidence 1.00|
+|   Prediction = 17 with confidence 0.00|
+  | Prediction = 12 with confidence 0.00|
+ |  Prediction = 15 with confidence 0.00|
+ |  Prediction = 33 with confidence 0.00|
 Top 5 model predictions for image 1 (Target is 25)
    Prediction = 25 with confidence 0.98
    Prediction = 30 with confidence 0.01
