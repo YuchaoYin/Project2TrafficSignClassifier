@@ -84,19 +84,23 @@ My final model consisted of the following layers:
 | Convolution 3x3       	| 1x1 stride, same padding, outputs: 32x32x64    	|
 | RELU  					|										    		|
 | Max pooling   	      	| 2x2 kernel, 2x2 stride, outputs: 16x16x64     	|
+
 | Layer 2            		|     Description	        			    		| 
 |:-------------------------:|:-------------------------------------------------:| 
 | Convolution 3x3   	    | 1x1 stride, same padding, outputs: 16x16x128   	|
 | RELU			     		|											    	|
 | Max pooling	         	| 2x2 kernel, 2x2 stride, outputs: 8x8x128   		|
+
 | Layer 3           		|     Description	             					| 
 |:-------------------------:|:-------------------------------------------------:| 
 | Convolution 3x3   	    | 1x1 stride, same padding, outputs: 8x8x256    	|
 | RELU   				 	|						     						|
+
 | Fully Connected Layer 1	|     Description	             					| 
 |:-------------------------:|:-------------------------------------------------:| 
 | Input             		| inputs: concatenate all the ConvNets and flatten 	| 
 | Output             		| outputs: 128                                   	| 
+
 | Fully Connected Layer 2	|     Description	             					| 
 |:-------------------------:|:-------------------------------------------------:| 
 | Input             		| inputs: 128                                   	| 
