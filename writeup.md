@@ -137,7 +137,7 @@ My final model results were:
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image5] ![alt text][image6] ![alt text][image7] 
-![alt text][image8 | 32X32]<:height="24px" width="48px"> ![alt text][image9]
+![alt text][image8 | =32X32] ![alt text][image9]
 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set.
