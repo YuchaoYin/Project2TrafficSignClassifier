@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+###Here is a link to my [project code]( https://github.com/YuchaoYin/Project2TrafficSignClassifier/Traffic_Sign_Classifier.ipynb )
 
 ###Data Set Summary & Exploration
 
@@ -57,6 +57,7 @@ Next step is data augmentation using imagedatagenerator from keras library.
 To avoid overfitting and yield more robust learning process, I added 20000 transformed versions of the original training set.
 
 Here is the code for deformation:
+
 image_datagen = ImageDataGenerator(rotation_range=15.,
                                    zoom_range=0.1,
                                    width_shift_range=0.1,
