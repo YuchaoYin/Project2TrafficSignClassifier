@@ -15,17 +15,8 @@ The goals / steps of this project are the following:
 [image2]: ./code_images/originalfig.png "Original Image"
 [image3]: ./code_images/deformation.png "After Deformation"
 [image4]: ./code_images/2_stage_ConvNet.jpg "2_stage_ConvNet"
-[image5]: ./new-images/stop.jpg "Stop Sign"
-[image6]: ./new-images/roadwork.jpg "Road Work"
-[image7]: ./new-images/childrencrossing.jpg "Children Crossing"
-[image8]: ./new-images/keepright.jpg "Keep Right"
-[image9]: ./new-images/speedlimit70.png "speedlimit70"
+[image5]: ./new-images/new_images.png "New Images"
 
-img[alt=img_alt_you_want_to_control] {
-  width: 70%;
-  border: none;
-  background: none;
-}
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
@@ -142,8 +133,7 @@ My final model results were:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image5] ![alt text][image6] ![alt text][image7] 
-![img_alt_you_want_to_control][image8] ![alt text][image9]
+![alt text][image5]
 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set.
