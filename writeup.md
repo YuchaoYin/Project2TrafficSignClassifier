@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [image2]: ./code_images/originalfig.png "Original Image"
 [image3]: ./code_images/deformation.png "After Deformation"
 [image4]: ./code_images/2_stage_ConvNet.jpg "2_stage_ConvNet"
-[image5]: ./new-images/new_images.png "New Images"
+[image5]: ./code_images/new_images.png "New Images"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -103,7 +103,7 @@ My final model consisted of the following layers:
 |:-------------------------:|:-------------------------------------------------:| 
 | Input             		| inputs: 128                                   	| 
 | Output             		| outputs: 43                                   	| 
-					     						|
+					     					
 
  
 
@@ -160,29 +160,37 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
   | Prediction = 12 with confidence 0.00|
  |  Prediction = 15 with confidence 0.00|
  |  Prediction = 33 with confidence 0.00|
-Top 5 model predictions for image 1 (Target is 25)
-   Prediction = 25 with confidence 0.98
-   Prediction = 30 with confidence 0.01
-   Prediction = 27 with confidence 0.00
-   Prediction = 11 with confidence 0.00
-   Prediction = 29 with confidence 0.00
-Top 5 model predictions for image 2 (Target is 28)
-   Prediction = 02 with confidence 0.20
-   Prediction = 05 with confidence 0.18
-   Prediction = 14 with confidence 0.17
-   Prediction = 01 with confidence 0.10
-   Prediction = 03 with confidence 0.08
-Top 5 model predictions for image 3 (Target is 38)
-   Prediction = 38 with confidence 0.97
-   Prediction = 34 with confidence 0.03
-   Prediction = 36 with confidence 0.00
-   Prediction = 03 with confidence 0.00
-   Prediction = 35 with confidence 0.00
-Top 5 model predictions for image 4 (Target is 04)
-   Prediction = 04 with confidence 0.96
-   Prediction = 18 with confidence 0.01
-   Prediction = 00 with confidence 0.01
-   Prediction = 01 with confidence 0.01
-   Prediction = 15 with confidence 0.00
+ 
+|Top 5 model predictions for image 1 (Target is 25)|
+|:---------------------:|
+|   Prediction = 25 with confidence 0.98|
+|   Prediction = 30 with confidence 0.01|
+|   Prediction = 27 with confidence 0.00|
+|   Prediction = 11 with confidence 0.00|
+|  Prediction = 29 with confidence 0.00|
+
+|Top 5 model predictions for image 2 (Target is 28)|
+|:---------------------:|
+|   Prediction = 02 with confidence 0.20|
+|   Prediction = 05 with confidence 0.18|
+|   Prediction = 14 with confidence 0.17|
+|   Prediction = 01 with confidence 0.10|
+|   Prediction = 03 with confidence 0.08|
+
+|Top 5 model predictions for image 3 (Target is 38)|
+|:---------------------:|
+|   Prediction = 38 with confidence 0.97|
+|   Prediction = 34 with confidence 0.03|
+|   Prediction = 36 with confidence 0.00|
+|   Prediction = 03 with confidence 0.00|
+|   Prediction = 35 with confidence 0.00|
+
+|Top 5 model predictions for image 4 (Target is 04)|
+|:---------------------:|
+|   Prediction = 04 with confidence 0.96|
+|   Prediction = 18 with confidence 0.01|
+|   Prediction = 00 with confidence 0.01|
+|   Prediction = 01 with confidence 0.01|
+|   Prediction = 15 with confidence 0.00|
 
 The children crossing sign is hard to recognize due to the bad direction of the camera. The softmax distribution also shows that the model is not sure which label is correct.
