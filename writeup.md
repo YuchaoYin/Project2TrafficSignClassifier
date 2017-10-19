@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image5]: ./new-images/stop.jpg "Stop Sign"
 [image6]: ./new-images/roadwork.jpg "Road Work"
 [image7]: ./new-images/childrencrossing.jpg "Children Crossing"
-[image8]: ./new-images/keepright.jpg "Keep Right"
+[image8]: ./new-images/keepright.jpg=32x32 "Keep Right"
 [image9]: ./new-images/speedlimit70.png "speedlimit70"
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
