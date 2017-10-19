@@ -100,12 +100,13 @@ My final model consisted of the following layers:
 |:-------------------------:|:-------------------------------------------------:| 
 | Input             		| inputs: concatenate all the ConvNets and flatten 	| 
 | Output             		| outputs: 128                                   	| 
+| RELU   				 	|	
 
 | Fully Connected Layer 2	|     Description	             					| 
 |:-------------------------:|:-------------------------------------------------:| 
 | Input             		| inputs: 128                                   	| 
 | Output             		| outputs: 43                                   	| 
-| RELU   				 	|						     						|
+					     						|
 
  
 
@@ -123,9 +124,9 @@ My final model consisted of the following layers:
 The model architecture is based on the paper [Sermanet Lecun](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). The authors provide a 2-stage ConvNet architecture which combines representation from multiple stages in the classifier. In the case of 2 stages of features, the second stage extracts 'global' and invariant shapes and structures, while the first stage extracts 'local' motifs with more precise details [Sermanet Lecun].
 
 My final model results were:
-* training set accuracy of 
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 99.7%
+* validation set accuracy of 97.1%
+* test set accuracy of 94.3%
 
  
 
