@@ -54,7 +54,7 @@ Based on the paper [Sermanet Lecun](http://yann.lecun.com/exdb/publis/pdf/serman
 
 Next step is data augmentation using imagedatagenerator from keras library.
 
-To avoid overfitting and yield more robust learning process, I added 20000 transformed versions of the original training set.
+To avoid overfitting and yield more robust learning process, I added 30000 transformed versions of the original training set.
 
 Here is the code for deformation:
 
@@ -63,7 +63,7 @@ image_datagen = ImageDataGenerator(rotation_range=15.,
                                    width_shift_range=0.1,
                                    height_shift_range=0.1)
                                    
-Here is an example of an original image and an augmented image:
+Here is an example of an original image and four augmented images:
 
 ![alt text][image2] ![alt text][image3]
 
@@ -122,9 +122,9 @@ My final model consisted of the following layers:
 The model architecture is based on the paper [Sermanet Lecun](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf). The authors provide a 2-stage ConvNet architecture which combines representation from multiple stages in the classifier. In the case of 2 stages of features, the second stage extracts 'global' and invariant shapes and structures, while the first stage extracts 'local' motifs with more precise details [Sermanet Lecun].
 
 My final model results were:
-* training set accuracy of 99.7%
-* validation set accuracy of 97.1%
-* test set accuracy of 94.3%
+* training set accuracy of 99.8%
+* validation set accuracy of 96.5%
+* test set accuracy of 94.4%
 
  
 
@@ -145,7 +145,7 @@ Here are the results of the prediction:
 |:---------------------:|:-----------------------------------------:| 
 | Stop Sign      		| Stop Sign   						    	| 
 | Road Work	    		| Road Work									|
-| Children Crossing	   	| Speed limit (50km/h)  	 				|
+| Children Crossing	   	| Roundabout mandatory 	 				|
 | Keep Right    	   	| Keep Right            	 				|
 | Speed limit (70km/h)	| Speed limit (70km/h)     	    			|
 
@@ -154,44 +154,45 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
-|Top 5 model predictions for image 0 (Target is 14)|
+|Top 5 predictions of 0. image (Label:14)|
 |:---------------------:|
-|   Prediction = 14 with confidence 1.00|
-|   Prediction = 17 with confidence 0.00|
-  | Prediction = 12 with confidence 0.00|
- |  Prediction = 15 with confidence 0.00|
- |  Prediction = 33 with confidence 0.00|
- 
-|Top 5 model predictions for image 1 (Target is 25)|
-|:---------------------:|
-|   Prediction = 25 with confidence 0.98|
-|   Prediction = 30 with confidence 0.01|
-|   Prediction = 27 with confidence 0.00|
-|   Prediction = 11 with confidence 0.00|
-|  Prediction = 29 with confidence 0.00|
+|   Prediction : 14 with probability : 1.00|
+|   Prediction : 17 with probability : 0.00|
+|   Prediction : 40 with probability : 0.00|
+|   Prediction : 33 with probability : 0.00|
+|   Prediction : 34 with probability : 0.00|
 
-|Top 5 model predictions for image 2 (Target is 28)|
+|Top 5 predictions of 1. image (Label:25)|
 |:---------------------:|
-|   Prediction = 02 with confidence 0.20|
-|   Prediction = 05 with confidence 0.18|
-|   Prediction = 14 with confidence 0.17|
-|   Prediction = 01 with confidence 0.10|
-|   Prediction = 03 with confidence 0.08|
+|   Prediction : 25 with probability : 0.99|
+|   Prediction : 30 with probability : 0.00|
+|   Prediction : 28 with probability : 0.00|
+|   Prediction : 29 with probability : 0.00|
+|   Prediction : 22 with probability : 0.00|
 
-|Top 5 model predictions for image 3 (Target is 38)|
+|Top 5 predictions of 2. image (Label:28)|
 |:---------------------:|
-|   Prediction = 38 with confidence 0.97|
-|   Prediction = 34 with confidence 0.03|
-|   Prediction = 36 with confidence 0.00|
-|   Prediction = 03 with confidence 0.00|
-|   Prediction = 35 with confidence 0.00|
+|   Prediction : 40 with probability : 0.61|
+|   Prediction : 02 with probability : 0.24|
+|   Prediction : 01 with probability : 0.09|
+|   Prediction : 05 with probability : 0.03|
+|   Prediction : 07 with probability : 0.02|
 
-|Top 5 model predictions for image 4 (Target is 04)|
+|Top 5 predictions of 3. image (Label:38)|
 |:---------------------:|
-|   Prediction = 04 with confidence 0.96|
-|   Prediction = 18 with confidence 0.01|
-|   Prediction = 00 with confidence 0.01|
-|   Prediction = 01 with confidence 0.01|
-|   Prediction = 15 with confidence 0.00|
+|   Prediction : 38 with probability : 0.88|
+|   Prediction : 40 with probability : 0.04|
+|   Prediction : 30 with probability : 0.03|
+|   Prediction : 11 with probability : 0.02|
+|   Prediction : 34 with probability : 0.02|
+
+|Top 5 predictions of 4. image (Label:04)|
+|:---------------------:|
+|   Prediction : 04 with probability : 1.00|
+|   Prediction : 01 with probability : 0.00|
+|   Prediction : 15 with probability : 0.00|
+|   Prediction : 00 with probability : 0.00|
+|   Prediction : 02 with probability : 0.00|
+
 
 The children crossing sign is hard to recognize due to the bad direction of the camera. The softmax distribution also shows that the model is not sure which label is correct.
